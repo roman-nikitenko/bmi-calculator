@@ -273,4 +273,15 @@ input[type="range"]::-webkit-slider-thumb {
   .main-container {
     height: 100%;
   }
+
+  .screen {
+    padding: 30px 10px;
+  }
+
+  .main-screen-navgation, .container {
+    gap: 10px;
+  }
+  .btn-save-result {
+    bottom: 30px;
+  }
 }
