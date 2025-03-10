@@ -62,16 +62,16 @@ btnGetStart.addEventListener('click', () => {
 btnCalculate.addEventListener('click', () => {
     const weight = +weightValue.innerHTML;
     const height = +rangeResult.textContent;
-    const result = weight / Math.pow((height / 100), 2) ;
+    const result = +(weight / Math.pow((height / 100), 2)).toFixed(1) ;
 
-    bmiResult.innerHTML = result.toFixed(2);
+    bmiResult.innerHTML = result;
     
     switch (true) {
         case result < 18.5:
             bmiReport.innerHTML = 'Underweight';
             resultList.children[0].classList.toggle('active');
             break;
-        case result > 18.5 && result < 24.9:
+        case result >= 18.5 && result <= 24.9:
             bmiReport.innerHTML = 'Normal weight';
             resultList.children[1].classList.toggle('active');
             break;

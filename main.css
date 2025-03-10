@@ -13,7 +13,6 @@ body {
 .main-container {
   margin: auto; 
   display: flex;
-  width: fit-content;
   overflow: hidden;
   width: 393px;
   transition: transform 450ms ease;
@@ -27,7 +26,6 @@ body {
 .screen {
   position: relative;
   width: 393px;
-  height: 852px;
   border-radius: 30px;
   background-color: #F4F3FF;
   display: flex;
@@ -39,7 +37,7 @@ body {
 .first-screen {
   color: white;
   background-color: #6C63FF;
-  padding: 0 30px;
+  padding: 54px 30px;
 }
 
 .first-screen h2 {
@@ -55,7 +53,6 @@ body {
 }
 
 .first-screen-title {
-  margin-top: 80px;
   text-align: center;
   font-size: 30px;
   font-weight: 800;
@@ -261,4 +258,19 @@ input[type="range"]::-webkit-slider-thumb {
 .active {
   text-decoration: underline;
   font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  .screen {
+    border-radius: 0;
+  }
+
+  .main-container {
+    height: 100%;
+  }
 }
