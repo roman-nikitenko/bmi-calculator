@@ -56,13 +56,11 @@ body {
   text-align: center;
   font-size: 30px;
   font-weight: 800;
-  
-  font-style: italic;
-  margin-bottom: 57px;
+  font-style: italic; 
 }
 
 .first-screen-img {
-  margin-bottom: 97px;
+  width: 100%;
 }
 
 .btn {

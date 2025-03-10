@@ -17,24 +17,29 @@
       <div class="slider-wrap">
         <div class="first-screen screen">
           <h1 class="first-screen-title">BMiDO</h1>
-          <img
-            class="first-screen-img"
-            src="src/first-screen-logo.png"
-            alt="main-logo"
-          />
-          <h2>
-            Get Started with<br />
-            Tracking Your Health!
-          </h2>
-          <p>
-            Calculate your BMI and stay on top of your wellness journey,
-            effortlessly.
-          </p>
+          <div class="">
+            <img
+              class="first-screen-img"
+              src="src/first-screen-logo.png"
+              alt="main-logo"
+            />
+            <div class="">
+              <h2>
+                Get Started with<br />
+                Tracking Your Health!
+              </h2>
+              <p>
+                Calculate your BMI and stay on top of your wellness journey,
+                effortlessly.
+              </p>
+            </div>
+          </div>
+
           <button id="btn-get-start" class="btn">Get Started</button>
         </div>
         <div class="main-screen screen">
           <h1 class="title">BMI CALCULATOR</h1>
-  
+
           <div class="container">
             <div class="main-screen-navgation">
               <div class="box">
@@ -93,39 +98,37 @@
                 <p>Female</p>
               </div>
             </div>
-            
           </div>
-  
-          <button id="btn-calculate" class="btn btn-result">Calculate BMI</button>
+
+          <button id="btn-calculate" class="btn btn-result">
+            Calculate BMI
+          </button>
         </div>
         <div class="result-screen screen">
           <div class="">
             <h1 class="title">BMI CALCULATOR</h1>
             <h2 class="sub-title">Body Mass Index</h2>
           </div>
-          
-       
-            
-            <div class="box">
-              <h3 class="box-title-result">BMI Results</h3>
-              <div class="result">
-                <p id="bmi-result" class="result-screen-result">22</p>
-              </div>
-              <p id="bmi-report" style="font-size: 24px; margin-bottom: 16px">NORMAL BMI</p>
-              <ul class="result-list">
-                <li id="id-1">Underweight: BMI less than 18.5</li>
-                <li id="id-2">Normal weight: BMI 18.5 to 24.9</li>
-                <li id="id-3">Overweight: BMI 25 to 29.9</li>
-                <li id="id-4">Obesity: 30 to 40</li>
-              </ul>
+
+          <div class="box">
+            <h3 class="box-title-result">BMI Results</h3>
+            <div class="result">
+              <p id="bmi-result" class="result-screen-result">22</p>
             </div>
-  
-          
-  
+            <p id="bmi-report" style="font-size: 24px; margin-bottom: 16px">
+              NORMAL BMI
+            </p>
+            <ul class="result-list">
+              <li id="id-1">Underweight: BMI less than 18.5</li>
+              <li id="id-2">Normal weight: BMI 18.5 to 24.9</li>
+              <li id="id-3">Overweight: BMI 25 to 29.9</li>
+              <li id="id-4">Obesity: 30 to 40</li>
+            </ul>
+          </div>
+
           <button id="btn-save" class="btn btn-result">Save the results</button>
         </div>
       </div>
-      
     </div>
     <script src="index.js"></script>
   </body>
