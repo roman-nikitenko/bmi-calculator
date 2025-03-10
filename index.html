@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>BMI</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="slider-wrap">
+        <div class="first-screen screen">
+          <h1 class="first-screen-title">BMiDO</h1>
+          <img
+            class="first-screen-img"
+            src="src/first-screen-logo.png"
+            alt="main-logo"
+          />
+          <h2>
+            Get Started with<br />
+            Tracking Your Health!
+          </h2>
+          <p>
+            Calculate your BMI and stay on top of your wellness journey,
+            effortlessly.
+          </p>
+          <button id="btn-get-start" class="btn">Get Started</button>
+        </div>
+        <div class="main-screen screen">
+          <h1 class="title">BMI CALCULATOR</h1>
+  
+          <div class="container">
+            <div class="main-screen-navgation">
+              <div class="box">
+                <h3 class="box-title">Age</h3>
+                <p id="age-value" class="box-value">30</p>
+                <div class="box-buttons">
+                  <img
+                    id="btn-age-minus"
+                    class="box-btn"
+                    src="src/btn-minus.png"
+                    alt=""
+                  />
+                  <img
+                    id="btn-age-plus"
+                    class="box-btn"
+                    src="src/btn-plus.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="box">
+                <h3 class="box-title">Weight (KG)</h3>
+                <p id="weight-value" class="box-value">78</p>
+                <div class="box-buttons">
+                  <img
+                    id="weight-btn-minus"
+                    class="box-btn"
+                    src="src/btn-minus.png"
+                    alt=""
+                  />
+                  <img
+                    id="weight-btn-plus"
+                    class="box-btn"
+                    src="src/btn-plus.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <h3 class="box-title">Weight (KG)</h3>
+              <p id="range-result" class="box-value">175</p>
+              <input id="range" type="range" />
+              <div class="max-min">
+                <p>50cm</p>
+                <p>300cm</p>
+              </div>
+            </div>
+            <div class="box">
+              <h3 class="box-title">Gender</h3>
+              <div class="gender-navigation">
+                <p>Male</p>
+                <div class="switcher">
+                  <div class="placeholder switch-off"></div>
+                </div>
+                <p>Female</p>
+              </div>
+            </div>
+          </div>
+  
+          <button id="btn-calculate" class="btn btn-result">Calculate BMI</button>
+        </div>
+        <div class="result-screen screen">
+          <h1 class="title">BMI CALCULATOR</h1>
+          <h2 class="sub-title">Body Mass Index</h2>
+          <div class="box">
+            <h3 class="box-title-result">BMI Results</h3>
+            <div class="result">
+              <p id="bmi-result" class="result-screen-result">22</p>
+            </div>
+            <p id="bmi-report" style="font-size: 24px; margin-bottom: 16px">NORMAL BMI</p>
+            <ul class="result-list">
+              <li id="id-1">Underweight: BMI less than 18.5</li>
+              <li id="id-2">Normal weight: BMI 18.5 to 24.9</li>
+              <li id="id-3">Overweight: BMI 25 to 29.9</li>
+              <li id="id-4">Obesity: 30 to 40</li>
+            </ul>
+          </div>
+  
+          <button id="btn-save" class="btn btn-result btn-save-result">Save the results</button>
+        </div>
+      </div>
+      
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </body>
+</html>
